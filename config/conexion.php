@@ -7,7 +7,7 @@
         protected function Conexion(){
             try {
                 //Local
-				$conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=sistematicket","root","");
+				$conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=sistematicket","root","root");
 				return $conectar;
 			} catch (Exception $e) {
 				print "¡Error BD!: " . $e->getMessage() . "<br/>";
